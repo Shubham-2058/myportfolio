@@ -118,6 +118,7 @@
         justify-content: space-between;
         align-items: center;
         padding: 0 2rem;
+        position: relative;
     }
 
     .nav-logo a {
@@ -155,7 +156,7 @@
 
     /* Add padding to body to account for fixed navbar */
     body {
-        padding-top: 20px;
+        padding-top: 80px;
     }
 
     /* Mobile Responsive */
@@ -477,11 +478,10 @@
     
     /* Hamburger icon */
     .hamburger {
-        display: block;
+        display: none;
+        flex-direction: column;
         cursor: pointer;
-        position: absolute;
-        top: 1rem;
-        right: 1rem;
+        padding: 5px;
         z-index: 1001;
     }
     
@@ -492,6 +492,8 @@
         margin: 5px 0;
         background: white;
         transition: 0.3s;
+        border-radius: 2px;
+        margin: 3px 0;
     }
 }
 
@@ -569,6 +571,7 @@
         font-size: 1.1rem;
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         width: 100%;
+        border-radius: 0;
     }
     
     .nav-link:hover {
